@@ -6,6 +6,7 @@ OPTIONS = ['rock', 'paper', 'scissors']
 class RockPaperScissorsSimulator:
 
     def __init__(self):
+        self.computer_choice = None
         self.human_choice = None
         self.computer = None
 
@@ -35,9 +36,9 @@ class RockPaperScissorsSimulator:
             print("Draw!")
         if self.human_choice == "rock":
             self.print_win_loose("scissors", "paper")
-        elif human_choice == "scissors":
+        elif self.human_choice == "scissors":
             self.print_win_loose("paper", "rock")
-        elif human_choice == "paper":
+        elif self.human_choice == "paper":
             self.print_win_loose("rock", "scissors")
 
     def simulate(self):
