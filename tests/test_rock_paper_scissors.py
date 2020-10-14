@@ -6,3 +6,6 @@ def test_game_print_options():
     assert game.print_options()
 
 
+def test_game_print_choices():
+    game = RockPaperScissorsSimulator()
+    assert game.print_choices
