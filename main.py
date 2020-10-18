@@ -22,8 +22,8 @@ class RockPaperScissorsSimulator:
         print("\n".join(f"({i}) {option.title()}" for i, option in enumerate(OPTIONS)))
 
     def print_choices(self):
-        print(f"You chose: {self.human_choice}")
-        print(f"Computer chose: {self.computer_choice}")
+        print(f"You chose:      {self.human_choice.title()}")
+        print(f"Computer chose: {self.computer_choice.title()}")
 
     def print_win_loose(self, human_beats, human_loses_to):
         if self.computer_choice == human_beats:
